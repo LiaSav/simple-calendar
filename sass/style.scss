@@ -1,0 +1,52 @@
+$colorBackground: #800080;
+$colorText: #FFD524;
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.calendar {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $colorText;
+    background-color: $colorBackground;
+
+    &__wrapper {
+        max-width: 1200px;
+    }
+
+    &__months-label {
+        margin-bottom: 15px;
+    }
+
+    &__months {
+        margin-bottom: 15px;
+        outline: none;
+        cursor: pointer;
+        border-radius: 3px;
+        color: $colorText;
+        background-color: $colorBackground;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        text-transform: capitalize;
+    }
+
+    &__days {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+
+    &__day {
+        flex: 0 1 14%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
